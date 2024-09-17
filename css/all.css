@@ -1,5 +1,6 @@
 /***************************************************              GENERAL RESET STYLES             ***************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=REM:100,200,300,regular,500,600,700,800,900);
 html,
 body,
 div,
@@ -222,7 +223,7 @@ section {
 	cursor: pointer;
 	border: none;
 	outline: none;
-    width: fit-content;
+	width: fit-content;
 }
 
 .btn span {
@@ -363,15 +364,16 @@ section {
 	margin-top: 10px;
 }
 
-/* .hero__title span {
-    text-align: center;
-    -webkit-text-stroke: 2px #000;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    color: transparent;
-} */
+
+.hero__title span {
+    font-family: 'REM', sans-serif;
+	-webkit-text-stroke: 2px #000;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	color: transparent;
+}
 
 .hero__support {
 	margin-top: 35px;
@@ -634,9 +636,9 @@ section {
 }
 
 .delivery-section__info {
-    max-width: 638px;
-    width: 100%;
-    padding: 52px 0 38px 66px;
+	max-width: 638px;
+	width: 100%;
+	padding: 52px 0 38px 66px;
 }
 
 .delivery-section__info h2 {
@@ -644,8 +646,8 @@ section {
 	font-size: 36px;
 	font-weight: 900;
 	line-height: normal;
-    margin-bottom: 10px;
-    white-space: nowrap;
+	margin-bottom: 10px;
+	white-space: nowrap;
 }
 
 .delivery-section__info p {
@@ -656,16 +658,21 @@ section {
 }
 
 .suppliers-logos {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-top: 30px;
+	margin-bottom: 40px;
 }
 
 .delivery-section__img {
-    width: 460px;
-    max-height: 324px;
+	width: 460px;
+	max-height: 324px;
 }
 
 /* MID SECTION */
+
+/* LAST CHANCE SECTION */
+
+/* LAST CHANCE SECTION */
+
