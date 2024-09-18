@@ -97,7 +97,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 article,
@@ -217,7 +217,7 @@ section {
 /* COMMON STYLES */
 
 body.stopScroll {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .btn {
@@ -232,6 +232,7 @@ body.stopScroll {
 	border: none;
 	outline: none;
 	width: fit-content;
+    transition: all 0.3s;
 }
 
 .btn span {
@@ -319,11 +320,10 @@ body.stopScroll {
 	text-transform: capitalize;
 }
 
-
 .header-r {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+	display: flex;
+	gap: 30px;
+	align-items: center;
 }
 
 .burger {
@@ -355,7 +355,6 @@ body.stopScroll {
 	transform: rotate(-45deg) translate(5px, -6px);
 }
 
-
 .mobile-menu {
 	background-color: rgba(255, 255, 255, 1);
 
@@ -374,33 +373,33 @@ body.stopScroll {
 }
 
 .mobile-menu__list {
-    background: url("../images/hero-sepia.png") no-repeat center center / cover,
-    linear-gradient(180deg, #ffd64f 32.55%, #e3651d 100%);
+	background: url("../images/hero-sepia.png") no-repeat center center / cover,
+		linear-gradient(180deg, #ffd64f 32.55%, #e3651d 100%);
 
-    width: 100%;
-    height: calc(100vh - 40px - 54px);
-    margin: 20px;
-    border-radius: 20px;
-    padding-top: 60px;
+	width: 100%;
+	height: calc(100vh - 40px - 54px);
+	margin: 20px;
+	border-radius: 20px;
+	padding-top: 60px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
 }
 
 .mobile-menu__item:visited,
 .mobile-menu__item {
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    transition: all 0.3s;
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	transition: all 0.3s;
 }
 
 .mobile-menu__item:hover {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 
 /* HEADER STYLES */
@@ -647,7 +646,7 @@ body.stopScroll {
 .news-block {
 	display: flex;
 	gap: 10px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .news-block__btn {
@@ -716,7 +715,7 @@ body.stopScroll {
 }
 
 .custom-info-block {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .custom-info-block * {
@@ -756,7 +755,7 @@ body.stopScroll {
 	justify-content: space-between;
 
 	border-radius: 20px;
-    overflow: hidden;
+	overflow: hidden;
 	background: #181818;
 }
 
@@ -870,7 +869,7 @@ body.stopScroll {
 .footer__socials {
 	display: flex;
 	justify-content: space-between;
-    gap: 20px;
+	gap: 20px;
 }
 
 .main-office__info {
@@ -915,3 +914,127 @@ body.stopScroll {
 	gap: 20px;
 }
 /* FOOTER SECTION */
+
+/* POPUP STYLES */
+
+.popup-add {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.popup-add.active {
+    opacity: 1;
+    z-index: 9;
+}
+
+.popup-add .container {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup__inner {
+	border-radius: 20px;
+	background: #f4f4f4;
+    padding: 50px;
+
+	position: relative;
+}
+
+
+.popup-title {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 25px;
+}
+
+.popup__img {
+	/* width: 260px; */
+    width: 100%;
+	height: 244px;
+	border-radius: 20px;
+	background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.popup__img img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+
+.close-popup {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.card-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.popup__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-card__title {
+    color: #000;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+}
+
+.popup-card__price {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+}
+
+
+.popup__card .btn {
+    margin-top: 10px;
+    padding: 16px 50px;
+}
+/* POPUP STYLES */
+
+
+.btn:hover {
+    background: #D2D2D2;
+}
+
+.btn-black:hover {
+    background: #424242;
+}
+
+.btn-orange:hover {
+    background: #D4A300;
+}

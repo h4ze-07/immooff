@@ -37,3 +37,28 @@ window.addEventListener('resize', () => {
         mobileMenu.classList.remove("active");
     }
 })
+
+
+
+// popup
+
+const popupAdd = document.getElementById('popup-add');
+const closeAdd = document.getElementById('close-popup');
+
+const openPopupBtns = document.querySelectorAll('.openPopup');
+
+openPopupBtns.forEach(el => {
+    el.addEventListener('click', () => {
+        popupAdd.classList.add('active');
+    })
+})
+
+closeAdd.addEventListener('click', () => {
+    popupAdd.classList.remove('active');
+})
+
+popupAdd.addEventListener('click', (e) => {
+    if (e.target === popupAdd) {
+        popupAdd.classList.remove('active');
+    }
+})
