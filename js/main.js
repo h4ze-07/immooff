@@ -19,3 +19,21 @@ burger.addEventListener("click", () => {
 	mobileMenu.classList.toggle("active");
 	document.body.classList.toggle("stopScroll");
 });
+
+
+const links = document.querySelectorAll('.mobile-menu__item');
+links.forEach( i => {
+    i.addEventListener('click', () => {
+        burger.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        document.body.classList.remove("stopScroll");
+    })
+})
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        document.body.classList.remove("stopScroll");
+        burger.classList.remove("active");
+        mobileMenu.classList.remove("active");
+    }
+})
