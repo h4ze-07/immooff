@@ -96,6 +96,10 @@ body {
 	line-height: 1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 article,
 aside,
 details,
